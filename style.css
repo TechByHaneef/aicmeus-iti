@@ -240,8 +240,237 @@ main {
     border-radius: 5px;
     transition: background 0.3s, transform 0.3s;
 }
+.admission-content{
+    
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
+#admissionForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* stack elements vertically */
+    padding: 100px;          /* add inner spacing */
+    gap: 20px;       /* adds 20px space between each element */
+    box-sizing: border-box; /* ensures padding doesn’t break width */
+}
 
-   
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
 
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
+button {
+    padding: 10px 20px;
+    background: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* General reset */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lobster', cursive, sans-serif;
+  background: linear-gradient(to bottom right, #e0f7fa, #fce4ec);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main container */
+main {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Section styling */
+main section {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main section:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+/* Headings */
+h1, h2 {
+  color: #0073e6;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 4px rgba(255,255,255,0.8);
+}
+
+/* Paragraphs and list items */
+p, li {
+  font-size: 18px;
+  color: #444;
+}
+
+/* Values list */
+.values-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.values-content li {
+  background: #fce4ec;
+  margin: 10px 0;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #880e4f;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.values-content li:hover {
+  background: #f8bbd0;
+  transform: scale(1.05);
+}
+
+/* Special section accents */
+.mission-content {
+  background: linear-gradient(to right, #e1f5fe, #f3e5f5);
+}
+
+.vision-content {
+  background: linear-gradient(to right, #fff9c4, #fce4ec);
+}
+
+.team-content {
+  background: linear-gradient(to right, #e0f7fa, #ede7f6);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+  main section {
+    padding: 20px;
+  }
+  h1, h2 {
+    font-size: 22px;
+  }
+  p, li {
+    font-size: 16px;
+  }
+}
+.companies {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.company-logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* spacing between logos */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.company-logos img {
+  width: 120px;   /* fixed width for all logos */
+  height: 80px;   /* fixed height for all logos */
+  object-fit: contain; /* keeps aspect ratio inside the box */
+  border-radius: 8px;  /* optional: rounded corners */
+  background: #fff;    /* optional: white background for consistency */
+  padding: 10px;       /* optional: breathing space around logos */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* optional: subtle shadow */
+}
+.map-container {
+  max-width: 500px;       /* shrink the container */
+  margin: 40px auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.map-container h2 {
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+.map-container p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.map-container iframe {
+  width: 100%;          /* responsive width inside container */
+  height: 300px;        /* smaller height for compact look */
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+footer {
+  width: 100%;
+  background: linear-gradient; /* heavenly gradient */
+  color: #090202;
+  padding: 30px 20px;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -6px 20px rgba(0,0,0,0.2);
+}
+
+footer h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-shadow: 1px 1px 6px rgba(6, 3, 3, 0.6);
+}
+
+footer a {
+  display: inline-block;
+  margin: 8px 15px;
+  color: #060101;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a i {
+  margin-right: 8px;
+}
+
+footer a:hover {
+  color: #ffeb3b; /* golden glow on hover */
+  transform: scale(1.1);
+}
+
+footer p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #f0f0f0;
+}
+
+footer small {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #ddd;
+}
