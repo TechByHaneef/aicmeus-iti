@@ -1,5 +1,15 @@
 /* Reset default margins */
-body,
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body { 
+  font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+  padding: 0;
+}
+
 main {
     margin: 0;
     padding: 0;
@@ -33,7 +43,7 @@ main {
     top: 0;
     left: 0;
     z-index: 1000;
-    font-family: "Lobster", cursive;
+    font-family: "aerial", sans-serif;
 }
 .nav-links {
     margin-left: auto;
@@ -150,7 +160,7 @@ main {
     flex-wrap: wrap;
     /* allow wrapping on smaller screens */
     margin: 40px auto;
-    max-width: 1200px;
+    max-width: 100%;
 }
 
 .card {
@@ -287,7 +297,8 @@ body, h1, h2, p, ul {
 }
 
 body {
-  font-family: 'Lobster', cursive, sans-serif;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
   background: linear-gradient(to bottom right, #e0f7fa, #fce4ec);
   color: #333;
   line-height: 1.6;
@@ -437,6 +448,21 @@ footer {
   border-top-right-radius: 20px;
   box-shadow: 0 -6px 20px rgba(0,0,0,0.2);
 }
+.footer-container {
+  display: flex;
+  justify-content: center; /* centers items horizontally */
+  align-items: center;     /* centers items vertically */
+  gap: 30px;
+  text-align: center;      /* keeps text inside sections centered */
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers content horizontally */
+  text-align: center;    /* centers text inside */
+  gap: 10px;
+}
 
 footer h2 {
   margin-bottom: 15px;
@@ -468,9 +494,27 @@ footer p {
   color: #0d0101;
 }
 
-footer small {
-  display: block;
-  margin-top: 10px;
-  font-size: 12px;
-  color: #100303;
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366; /* WhatsApp green */
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+.whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+.whatsapp i {
+  font-size: 28px;
 }
