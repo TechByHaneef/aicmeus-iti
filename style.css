@@ -110,8 +110,8 @@ main {
     border: none;
 }
 
-/* Below 600px: show hamburger, hide nav links */
-@media (max-width: 600px) {
+/* Below 900px: show hamburger, hide nav links */
+@media (max-width: 900px) {
     .nav-links {
         display: none;
         flex-direction: column;
